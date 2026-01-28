@@ -353,6 +353,52 @@
                 ],
                 "combinator": "and"
               }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "5b9c839b-26e1-4d3f-8181-4d955c6d5d68",
+                    "leftValue": "={{ $json.pantalla_actual }}",
+                    "rightValue": "TAREA_EDIT",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "8da963bd-52aa-41ac-9e5d-74c2c49810fc",
+                    "leftValue": "={{ $json.pantalla_actual }}",
+                    "rightValue": "TAREA_DELETE",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
             }
           ]
         },
@@ -1361,8 +1407,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        5760,
-        -1344
+        4608,
+        -1552
       ],
       "id": "c96492ad-1e6e-464f-bd3e-463168b61899",
       "name": "Switch2"
@@ -1378,8 +1424,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6016,
-        -960
+        4864,
+        -1168
       ],
       "id": "2908d30c-171b-4cba-a315-c30a1aa4a357",
       "name": "Send a text message7",
@@ -1402,8 +1448,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6272,
-        -960
+        5120,
+        -1168
       ],
       "id": "d692b2bc-86ca-4dc8-816c-a9b40d7287c7",
       "name": "Send a text message8",
@@ -1426,8 +1472,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6016,
-        -1872
+        4864,
+        -2080
       ],
       "id": "0eb71285-8f98-442f-ae70-f5904b99a652",
       "name": "Send a text message9",
@@ -1533,8 +1579,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        6272,
-        -1872
+        5120,
+        -2080
       ],
       "id": "14a7f071-1809-40c3-8789-548c627f9c1f",
       "name": "Update row in sheet4",
@@ -1583,8 +1629,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        5136,
-        384
+        4320,
+        -480
       ],
       "id": "a009ac84-78ec-482f-a59a-ec9bc9992a3e",
       "name": "If"
@@ -1732,8 +1778,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        6848,
-        -128
+        5424,
+        -784
       ],
       "id": "3ce7f380-f893-465e-a7d9-1a6168c375df",
       "name": "Switch3"
@@ -1755,8 +1801,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        7696,
-        -624
+        6272,
+        -1280
       ]
     },
     {
@@ -1770,8 +1816,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        8432,
-        -752
+        7248,
+        -1600
       ],
       "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
       "retryOnFail": true,
@@ -1794,8 +1840,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        8176,
-        -512
+        6752,
+        -1168
       ],
       "webhookId": "58122352-e475-4894-bfaf-c3aa5ecc6ce5",
       "credentials": {
@@ -1952,8 +1998,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8176,
-        -752
+        6992,
+        -1600
       ],
       "id": "e65b043f-ec41-40b2-82e6-e638deef6e0c",
       "name": "Update row in sheet5",
@@ -1981,8 +2027,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        7680,
-        -192
+        6256,
+        -848
       ]
     },
     {
@@ -2133,8 +2179,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8432,
-        -304
+        7008,
+        -960
       ],
       "id": "9273faa6-00cc-479b-bb96-49d7d1e212f4",
       "name": "Update row in sheet6",
@@ -2166,8 +2212,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8176,
-        -304
+        6752,
+        -960
       ],
       "id": "411d4260-0a04-4ef5-ab9e-85a17af474db",
       "name": "Get row(s) in sheet1",
@@ -2189,8 +2235,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        8176,
-        -112
+        6752,
+        -768
       ],
       "webhookId": "58122352-e475-4894-bfaf-c3aa5ecc6ce5",
       "credentials": {
@@ -2349,8 +2395,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8112,
-        48
+        6688,
+        -608
       ],
       "id": "e684b9d6-9db0-482c-a96f-3a7c2b3bf39a",
       "name": "Update row in sheet7",
@@ -2382,8 +2428,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        7856,
-        48
+        6432,
+        -608
       ],
       "id": "9029e542-2724-42ba-8a6a-d766c5ef004c",
       "name": "Get row(s) in sheet2",
@@ -2405,8 +2451,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        8352,
-        48
+        6928,
+        -608
       ],
       "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
       "credentials": {
@@ -2566,8 +2612,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8336,
-        256
+        6912,
+        -400
       ],
       "id": "8564f20d-256d-4650-953a-30bb52b98918",
       "name": "Update row in sheet8",
@@ -2599,8 +2645,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8080,
-        256
+        6656,
+        -400
       ],
       "id": "b1593e86-d79d-488a-a501-72fd809fb7b1",
       "name": "Get row(s) in sheet3",
@@ -2622,8 +2668,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        8576,
-        256
+        7152,
+        -400
       ],
       "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
       "credentials": {
@@ -2785,8 +2831,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8288,
-        480
+        6864,
+        -176
       ],
       "id": "4ac90577-a83a-4242-b7cd-79d619b24652",
       "name": "Update row in sheet10",
@@ -2818,8 +2864,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8048,
-        480
+        6624,
+        -176
       ],
       "id": "a3aa49f6-0354-4bc0-a3ae-ac41d13a81dd",
       "name": "Get row(s) in sheet5",
@@ -2841,8 +2887,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        8528,
-        480
+        7104,
+        -176
       ],
       "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
       "credentials": {
@@ -2931,11 +2977,12 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        7728,
-        1584
+        5840,
+        816
       ],
       "id": "4945a9e8-fabd-4adc-9be3-bf047a6726fa",
-      "name": "Switch4"
+      "name": "Switch4",
+      "executeOnce": true
     },
     {
       "parameters": {
@@ -3038,8 +3085,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        7664,
-        672
+        6240,
+        16
       ],
       "id": "5abb6cd8-f784-4154-bb42-18c3cf481ba3",
       "name": "Switch5"
@@ -3196,8 +3243,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8288,
-        656
+        6864,
+        0
       ],
       "id": "03541bb0-d3fd-401c-abe3-8592591c4f04",
       "name": "Update row in sheet11",
@@ -3229,8 +3276,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8032,
-        656
+        6608,
+        0
       ],
       "id": "c8dd00cc-6d27-4bd6-bae9-55c41d95a879",
       "name": "Get row(s) in sheet6",
@@ -3252,8 +3299,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        8528,
-        656
+        7104,
+        0
       ],
       "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
       "credentials": {
@@ -3415,8 +3462,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8288,
-        848
+        6864,
+        192
       ],
       "id": "8578f8fe-374e-4fed-9ffe-9e5f35801e61",
       "name": "Update row in sheet12",
@@ -3448,8 +3495,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8032,
-        848
+        6608,
+        192
       ],
       "id": "024ebe5f-9886-4a64-a17b-530a971d89df",
       "name": "Get row(s) in sheet7",
@@ -3471,8 +3518,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        8528,
-        848
+        7104,
+        192
       ],
       "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
       "credentials": {
@@ -3491,8 +3538,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        8032,
-        1040
+        6608,
+        384
       ],
       "id": "e9b94ecf-e171-4692-8280-d18ab03221fe",
       "name": "Send a text message10",
@@ -3525,11 +3572,12 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8608,
-        1488
+        6720,
+        720
       ],
       "id": "88ac855c-bb54-4363-b0b8-2e692e7c66f3",
       "name": "Get row(s) in sheet8",
+      "executeOnce": true,
       "credentials": {
         "googleSheetsOAuth2Api": {
           "id": "hG2KjqFn0nRxAqmP",
@@ -3659,11 +3707,12 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        9120,
-        1488
+        7232,
+        720
       ],
       "id": "1be28a22-349f-4153-833e-6947f3b5e3b4",
       "name": "Append row in sheet",
+      "executeOnce": true,
       "credentials": {
         "googleSheetsOAuth2Api": {
           "id": "hG2KjqFn0nRxAqmP",
@@ -3673,7 +3722,7 @@
     },
     {
       "parameters": {
-        "chatId": "={{$node[\"Edit Fields1\"].json.ChatIdSet}}\n",
+        "chatId": "={{$node[\"Telegram Trigger\"].json.message.chat.id}}\n",
         "text": "Agenda completada.",
         "additionalFields": {
           "appendAttribution": false
@@ -3682,14 +3731,15 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        9360,
-        1440
+        7456,
+        704
       ],
       "id": "3fb9e420-feda-4be6-8229-0ebe075ba8b2",
       "name": "Send a text message11",
       "webhookId": "3467d3a3-b94f-4550-b6ce-a4b5b14025a0",
       "retryOnFail": true,
       "maxTries": 5,
+      "executeOnce": true,
       "credentials": {
         "telegramApi": {
           "id": "YMdv2aeMU5U6FQ85",
@@ -3852,11 +3902,12 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        9760,
-        1488
+        7872,
+        720
       ],
       "id": "8fa45e16-6942-4ff9-ae08-052fc368405c",
       "name": "Update row in sheet13",
+      "executeOnce": true,
       "credentials": {
         "googleSheetsOAuth2Api": {
           "id": "hG2KjqFn0nRxAqmP",
@@ -4002,8 +4053,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8128,
-        1856
+        6240,
+        1088
       ],
       "id": "33747132-5d8c-492e-b165-ca20ca168fd6",
       "name": "Update row in sheet14",
@@ -4023,8 +4074,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        8384,
-        1856
+        6496,
+        1088
       ],
       "id": "4510ea30-c0d3-403e-9918-8f7263a6af18",
       "name": "Send a text message12",
@@ -4182,8 +4233,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8128,
-        1664
+        6240,
+        896
       ],
       "id": "da92d9f7-c44e-428b-a7d8-cc7216491f95",
       "name": "Update row in sheet15",
@@ -4205,8 +4256,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        8336,
-        1664
+        6448,
+        896
       ],
       "id": "93743e16-9449-42b3-8dc6-35778653c1db",
       "name": "Send a text message13",
@@ -4229,8 +4280,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        8672,
-        -304
+        7248,
+        -960
       ],
       "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
       "credentials": {
@@ -4439,12 +4490,13 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8128,
-        1488
+        6240,
+        720
       ],
       "id": "5ca71f0e-30fc-4a10-a483-dc1486382ab3",
       "name": "Get row(s) in sheet4",
       "alwaysOutputData": true,
+      "executeOnce": true,
       "credentials": {
         "googleSheetsOAuth2Api": {
           "id": "hG2KjqFn0nRxAqmP",
@@ -4460,11 +4512,12 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        8336,
-        1488
+        6448,
+        720
       ],
       "id": "c7bd3561-26fa-49e3-afb2-b8a7ac1794b7",
-      "name": "Code in JavaScript"
+      "name": "Code in JavaScript",
+      "executeOnce": true
     },
     {
       "parameters": {
@@ -4473,15 +4526,16 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        8848,
-        1488
+        6960,
+        720
       ],
       "id": "60955a0f-aca0-4e83-983f-c4648a6e91d5",
-      "name": "Code in JavaScript1"
+      "name": "Code in JavaScript1",
+      "executeOnce": true
     },
     {
       "parameters": {
-        "chatId": "={{$node[\"Edit Fields1\"].json.ChatIdSet}}",
+        "chatId": "={{$node[\"Telegram Trigger\"].json.message.chat.id}}",
         "text": "=¿En qué te puedo ayudar hoy?\n\nMenú principal:\n0. Ayuda\n1. Agenda (citas)\n2. Tareas\n3. Recordatorios\n4. Hábitos\n5. Listas\n6. Reportes\n7. Configuración\n8. Administrador\n\nSugerencia:\n\nSi quieres empezar rápido, te recomiendo la opción 1 (Agenda).",
         "additionalFields": {
           "appendAttribution": false
@@ -4490,14 +4544,15 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        9984,
-        1360
+        8112,
+        528
       ],
       "id": "ef3a2cf2-a0e3-4f82-96ba-59c274941762",
       "name": "Send a text message22",
       "webhookId": "67f4070f-d09c-4373-8dcb-d45994d560f6",
       "retryOnFail": true,
       "maxTries": 5,
+      "executeOnce": true,
       "credentials": {
         "telegramApi": {
           "id": "YMdv2aeMU5U6FQ85",
@@ -4522,34 +4577,12 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        9568,
-        1488
+        7680,
+        720
       ],
       "id": "f99b2c07-bfc3-49a5-85a0-a86342b411aa",
-      "name": "Edit Fields"
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "00f95317-6445-4f77-97b8-debb368c783f",
-              "name": "ChatIdSet",
-              "value": "={{ $json.chatId }}",
-              "type": "string"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        8704,
-        1296
-      ],
-      "id": "21d51d7e-7fa3-43bd-88e4-689b620d4074",
-      "name": "Edit Fields1"
+      "name": "Edit Fields",
+      "executeOnce": true
     },
     {
       "parameters": {
@@ -4572,8 +4605,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        6048,
-        -1664
+        4896,
+        -1872
       ],
       "id": "bf75e962-97b6-404e-8724-73f3fc13176a",
       "name": "Get row(s) in sheet14",
@@ -4591,8 +4624,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        6288,
-        -1664
+        5136,
+        -1872
       ],
       "id": "eb148d3a-79ec-4050-bbe6-182688876038",
       "name": "Code in JavaScript2"
@@ -4608,8 +4641,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6496,
-        -1664
+        5344,
+        -1872
       ],
       "id": "10bb2d62-4d00-4afc-bc0f-2de52d5eb02d",
       "name": "Send a text message23",
@@ -4759,8 +4792,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        6704,
-        -1664
+        5552,
+        -1872
       ],
       "id": "8dd5abac-c01a-461a-aec9-27cdc723a3f2",
       "name": "Update row in sheet9",
@@ -4779,8 +4812,8 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        5280,
-        -1504
+        4128,
+        -1712
       ],
       "typeVersion": 1,
       "id": "b1bd0c03-a8c9-4a6f-8dd5-5425af55e988",
@@ -4797,8 +4830,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6048,
-        -1472
+        4896,
+        -1680
       ],
       "id": "9f8fb788-4ee6-4ba8-ab88-6cc98f934a28",
       "name": "Send a text message24",
@@ -4955,8 +4988,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        6256,
-        -1472
+        5104,
+        -1680
       ],
       "id": "2a95abc4-1446-44d0-b492-1aafcd1675b6",
       "name": "Update row in sheet20",
@@ -4994,8 +5027,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        3536,
-        2192
+        3152,
+        2064
       ],
       "id": "7d63fbd2-66a7-464a-bb2a-2e7d2880b699",
       "name": "Get row(s) in sheet15",
@@ -5013,8 +5046,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3776,
-        2192
+        3392,
+        2064
       ],
       "id": "6a8993ac-2be8-4c62-9003-a74a680271ae",
       "name": "Code in JavaScript3"
@@ -5047,8 +5080,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        3984,
-        2192
+        3600,
+        2064
       ],
       "id": "c913a6b6-1970-4edf-9c4b-afa8596e304e",
       "name": "If2"
@@ -5193,8 +5226,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4400,
-        2256
+        4016,
+        2128
       ],
       "id": "544b24e4-faf3-462c-afad-a2032066c7b1",
       "name": "Update row in sheet21",
@@ -5233,8 +5266,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        3136,
-        2544
+        2752,
+        2416
       ],
       "id": "3e2417de-fa8b-4a87-9994-d173d2dba301",
       "name": "If3"
@@ -5250,8 +5283,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4400,
-        2048
+        4016,
+        1920
       ],
       "id": "e7f42a04-2ba6-454b-9671-9debd32e09e4",
       "name": "Send a text message25",
@@ -5274,8 +5307,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4640,
-        2256
+        4256,
+        2128
       ],
       "id": "dd7513bc-cf6f-4378-af21-2249b3a8e02b",
       "name": "Send a text message26",
@@ -5366,8 +5399,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        4048,
-        2672
+        3664,
+        2544
       ],
       "id": "3c098ce5-a9b9-4458-bf4b-36a6937e16ee",
       "name": "Switch10"
@@ -5400,8 +5433,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        3552,
-        2960
+        3168,
+        2832
       ],
       "id": "f9aafdb0-5843-40dd-887f-3ce521f1674d",
       "name": "If4"
@@ -5423,8 +5456,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        4368,
-        3136
+        3984,
+        3008
       ]
     },
     {
@@ -5440,8 +5473,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        6080,
-        3008
+        5696,
+        2880
       ],
       "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
       "retryOnFail": true,
@@ -5466,8 +5499,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        4848,
-        3248
+        4464,
+        3120
       ],
       "webhookId": "58122352-e475-4894-bfaf-c3aa5ecc6ce5",
       "credentials": {
@@ -5625,8 +5658,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4848,
-        3008
+        4464,
+        2880
       ],
       "id": "dae837b0-cac5-44e4-acde-f6bfae1ffba9",
       "name": "Update row in sheet23",
@@ -5648,8 +5681,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4416,
-        2448
+        4032,
+        2320
       ],
       "id": "180260b8-c91d-4451-9bc6-221e8c281518",
       "name": "Send a text message27",
@@ -5803,8 +5836,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4640,
-        2448
+        4256,
+        2320
       ],
       "id": "31d38c8e-0bd1-4bd7-8c39-e3c4fd92cf98",
       "name": "Update row in sheet29",
@@ -5836,8 +5869,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        3840,
-        2688
+        3456,
+        2560
       ],
       "id": "170ed05b-bdb1-40d7-9dbc-ada77b7ff5a7",
       "name": "Get row(s) in sheet16",
@@ -5859,8 +5892,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4416,
-        2656
+        4032,
+        2528
       ],
       "id": "986c0fb7-e0a2-405e-b433-dd9c13d8a3b6",
       "name": "Send a text message28",
@@ -6014,8 +6047,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4624,
-        2656
+        4240,
+        2528
       ],
       "id": "2c75f71b-3120-4872-9928-1572b8b1a6b3",
       "name": "Update row in sheet30",
@@ -6174,8 +6207,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4864,
-        2848
+        4480,
+        2720
       ],
       "id": "93aaaa91-bf25-49ce-a518-d505357e15cd",
       "name": "Update row in sheet31",
@@ -6197,8 +6230,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4416,
-        2848
+        4032,
+        2720
       ],
       "id": "459cf4b9-6bce-4edd-a63f-812abc6fd2b7",
       "name": "Send a text message29",
@@ -6227,8 +6260,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        4656,
-        2848
+        4272,
+        2720
       ],
       "id": "3b8aebd7-6904-4325-a677-267225d093c6",
       "name": "Edit Fields2"
@@ -6289,8 +6322,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        3872,
-        3344
+        3488,
+        3216
       ],
       "id": "c8c16bec-02e6-4259-ad28-fd5304ae9e9b",
       "name": "Switch11"
@@ -6312,8 +6345,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        4352,
-        3552
+        3968,
+        3424
       ]
     },
     {
@@ -6327,8 +6360,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        4848,
-        3632
+        4464,
+        3504
       ],
       "webhookId": "58122352-e475-4894-bfaf-c3aa5ecc6ce5",
       "credentials": {
@@ -6349,8 +6382,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        6112,
-        3440
+        5728,
+        3312
       ],
       "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
       "credentials": {
@@ -6381,8 +6414,14 @@
           "mappingMode": "defineBelow",
           "value": {
             "id_cita": "={{ $('Get row(s) in sheet').item.json.datos_parciales_1 }}",
-            "fecha": "={{ $('Get row(s) in sheet').item.json.datos_parciales_2 }}",
-            "hora": "={{ $json.hora }}"
+            "fecha": "={{ $('Update row in sheet23').item.json.datos_parciales_2 }}",
+            "hora": "={{ $json.hora }}",
+            "nombre": "={{ $json.nombre }}",
+            "motivo": "={{ $json.motivo }}",
+            "canal": "={{ $json.canal }}",
+            "estado": "={{ $json.estado }}",
+            "creado_por": "={{ $json.creado_por }}",
+            "timestamp_creacion": "={{ $json.timestamp_creacion }}"
           },
           "matchingColumns": [
             "id_cita"
@@ -6490,8 +6529,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        5328,
-        3008
+        4944,
+        2880
       ],
       "id": "75527b72-3f37-4655-8578-d5cce43e57ce",
       "name": "Update row in sheet33",
@@ -6650,8 +6689,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4832,
-        3440
+        4448,
+        3312
       ],
       "id": "b6321d35-bd03-451d-bce7-3ec199d46abc",
       "name": "Update row in sheet32",
@@ -6792,8 +6831,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        5328,
-        3440
+        4944,
+        3312
       ],
       "id": "1266bfb9-5679-4664-988e-11ab28f732ff",
       "name": "Update row in sheet34",
@@ -6821,8 +6860,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        5584,
-        3008
+        5200,
+        2880
       ],
       "id": "7cd8cd7a-da37-4f22-8d3a-753f424088fc",
       "name": "Edit Fields3"
@@ -6981,8 +7020,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        5840,
-        3008
+        5456,
+        2880
       ],
       "id": "2f6fd5b9-929d-4c3c-8d91-c826ffb82197",
       "name": "Update row in sheet35",
@@ -7010,8 +7049,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        5584,
-        3440
+        5200,
+        3312
       ],
       "id": "6af1b1e6-bf92-4101-b2d5-7c20e17c28ef",
       "name": "Edit Fields4"
@@ -7170,8 +7209,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        5840,
-        3440
+        5456,
+        3312
       ],
       "id": "05e958be-889f-4ee0-ae91-c03c4f2e2f41",
       "name": "Update row in sheet36",
@@ -7193,8 +7232,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6304,
-        3008
+        5920,
+        2880
       ],
       "id": "8e04d798-c1cc-455c-b702-91e01e86d83d",
       "name": "Send a text message30",
@@ -7217,8 +7256,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6336,
-        3440
+        5952,
+        3312
       ],
       "id": "d0545fa9-f5cd-4eb1-80fd-79f51408c098",
       "name": "Send a text message31",
@@ -7282,8 +7321,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        5072,
-        3440
+        4688,
+        3312
       ],
       "id": "916d4a93-bfd8-44f0-ac0c-38ade8785b37",
       "name": "Get row(s) in sheet17",
@@ -7323,8 +7362,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        5088,
-        3008
+        4704,
+        2880
       ],
       "id": "252b7633-8b52-47df-b48c-6bcc6d9f3bca",
       "name": "Get row(s) in sheet18",
@@ -7346,8 +7385,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6048,
-        -1296
+        4896,
+        -1504
       ],
       "id": "b6fa2099-0559-46b1-a692-4ff2bd5b23d7",
       "name": "Send a text message32",
@@ -7503,8 +7542,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        6256,
-        -1296
+        5104,
+        -1504
       ],
       "id": "63a56cca-089a-48cd-960b-31d7b68c8f3e",
       "name": "Update row in sheet37",
@@ -7542,8 +7581,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        3744,
-        4272
+        3072,
+        3872
       ],
       "id": "100a7a5e-03e7-4296-8947-7bb9ea295376",
       "name": "Get row(s) in sheet19",
@@ -7561,8 +7600,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3984,
-        4272
+        3312,
+        3872
       ],
       "id": "93ad9f25-1a49-4e9a-94db-2409ab9ddab0",
       "name": "Code in JavaScript4"
@@ -7595,8 +7634,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        4192,
-        4272
+        3520,
+        3872
       ],
       "id": "a354daa0-bcf9-4a52-a3c2-e831c138b2a3",
       "name": "If5"
@@ -7741,8 +7780,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4608,
-        4336
+        3936,
+        3936
       ],
       "id": "19dd1182-a8e0-4850-b54f-b1c8227de880",
       "name": "Update row in sheet38",
@@ -7781,8 +7820,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        3344,
-        4624
+        2672,
+        4224
       ],
       "id": "5bb962ae-2019-48fe-8f6e-2f6c9e3c0e8e",
       "name": "If6"
@@ -7798,8 +7837,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4608,
-        4128
+        3936,
+        3728
       ],
       "id": "c4cde0e5-6d3d-4273-a762-bb133a969223",
       "name": "Send a text message33",
@@ -7822,8 +7861,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4848,
-        4336
+        4176,
+        3936
       ],
       "id": "93acfddb-8e18-4633-8e57-1d9d99649143",
       "name": "Send a text message34",
@@ -7857,8 +7896,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4624,
-        4848
+        3952,
+        4448
       ],
       "id": "873e4e2c-8bc6-4c2b-b65a-69fde5d1fa9f",
       "name": "Delete rows or columns from sheet",
@@ -7897,8 +7936,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        3888,
-        4992
+        3216,
+        4592
       ],
       "id": "5390ee25-c9dc-44ac-909b-7bccc5328000",
       "name": "If7"
@@ -7932,8 +7971,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4400,
-        4848
+        3728,
+        4448
       ],
       "id": "bd361cc0-8631-499c-90d2-a215669afce2",
       "name": "Get row(s) in sheet20",
@@ -7965,8 +8004,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4160,
-        4848
+        3488,
+        4448
       ],
       "id": "4099d9b3-53e0-4d50-a328-17c5f8e4ed21",
       "name": "Get row(s) in sheet21",
@@ -7988,8 +8027,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        5216,
-        4848
+        4544,
+        4448
       ],
       "id": "811be460-d311-4031-8a28-e53a0ed15f70",
       "name": "Send a text message35",
@@ -8010,8 +8049,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        5424,
-        4848
+        4752,
+        4448
       ],
       "id": "8c13a43d-b10f-43b3-8f56-2ea3f57ae463",
       "name": "Send a text message36",
@@ -8032,8 +8071,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4144,
-        5120
+        3472,
+        4720
       ],
       "id": "8071acd2-aecc-4f4c-90da-2fac12edf486",
       "name": "Send a text message37",
@@ -8054,8 +8093,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4832,
-        5120
+        4160,
+        4720
       ],
       "id": "447a969e-cf46-4337-b2fa-063a0b529fb1",
       "name": "Send a text message38",
@@ -8213,8 +8252,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        5024,
-        4848
+        4352,
+        4448
       ],
       "id": "eb650560-676e-4aef-b9ea-a8b720456ccc",
       "name": "Update row in sheet39",
@@ -8242,8 +8281,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        4832,
-        4848
+        4160,
+        4448
       ],
       "id": "4a507e1c-6e4f-4127-868b-481500e0082e",
       "name": "Edit Fields6"
@@ -8394,8 +8433,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4592,
-        5120
+        3920,
+        4720
       ],
       "id": "6ae2f202-6955-4b35-9e37-18fcbc74d78c",
       "name": "Update row in sheet40",
@@ -8423,8 +8462,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        4400,
-        5120
+        3728,
+        4720
       ],
       "id": "9d6ecc63-a60b-41f2-82ef-ca053596f0d1",
       "name": "Edit Fields7"
@@ -8573,8 +8612,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        6240,
-        -1120
+        5088,
+        -1328
       ],
       "id": "63c64de0-9388-498d-a24b-39ebd0e12ca6",
       "name": "Update row in sheet41",
@@ -8613,8 +8652,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        3296,
-        5744
+        2624,
+        5344
       ],
       "id": "b4ec0121-384c-425d-8682-691a625ba8ed",
       "name": "If8"
@@ -8654,8 +8693,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        3824,
-        5568
+        3152,
+        5168
       ],
       "id": "5f570260-9e72-4067-84c6-d1aacb51bae7",
       "name": "Get row(s) in sheet22",
@@ -8673,8 +8712,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        4064,
-        5568
+        3392,
+        5168
       ],
       "id": "ee1e2dfe-232e-4bbf-8d24-e6fd1482bb42",
       "name": "Code in JavaScript5"
@@ -8707,8 +8746,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        4272,
-        5568
+        3600,
+        5168
       ],
       "id": "38533a9e-26fb-40a1-a170-a288c64b3fbb",
       "name": "If9"
@@ -8735,7 +8774,7 @@
           "value": {
             "row_number": 2,
             "telegram_user": "={{ $node[\"Telegram Trigger\"].json.message.chat.first_name }} ",
-            "pantalla_actual": "AGENDA_DELETE",
+            "pantalla_actual": "AGENDA_COMPLETE",
             "datos_parciales_1": "={{ $node[\"Telegram Trigger\"].json.message.text }}",
             "paso_actual": "COMPLETE"
           },
@@ -8853,8 +8892,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4688,
-        5632
+        4016,
+        5232
       ],
       "id": "b5140b51-c463-4214-a36f-a4c44d960ae4",
       "name": "Update row in sheet42",
@@ -8876,8 +8915,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4688,
-        5424
+        4016,
+        5024
       ],
       "id": "e080c353-4d26-4f12-86ea-15160f24aa5e",
       "name": "Send a text message40",
@@ -8900,8 +8939,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4928,
-        5632
+        4256,
+        5232
       ],
       "id": "a1905638-6835-4709-adf0-2486600d5db9",
       "name": "Send a text message41",
@@ -8942,8 +8981,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        3872,
-        5920
+        3200,
+        5520
       ],
       "id": "34416442-e7a9-4640-8ca7-5b107ccb750a",
       "name": "Get row(s) in sheet23",
@@ -8965,8 +9004,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        4880,
-        5920
+        4208,
+        5520
       ],
       "id": "5dcea403-b95f-4163-94df-9c8e4b232a57",
       "name": "Send a text message42",
@@ -8987,8 +9026,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        5088,
-        5920
+        4416,
+        5520
       ],
       "id": "bfb7973b-e68f-4f92-ad09-df685da8f06b",
       "name": "Send a text message43",
@@ -9146,8 +9185,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4688,
-        5920
+        4016,
+        5520
       ],
       "id": "d7b60202-56ba-4b21-a10f-261c626e75af",
       "name": "Update row in sheet43",
@@ -9175,8 +9214,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        4496,
-        5920
+        3824,
+        5520
       ],
       "id": "ede01585-e5f6-482f-b905-3a6a6f74e431",
       "name": "Edit Fields8"
@@ -9192,8 +9231,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        6032,
-        -1120
+        4880,
+        -1328
       ],
       "id": "08705e4b-2433-4766-81ab-ade9c5a18582",
       "name": "Send a text message39",
@@ -9341,8 +9380,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        4192,
-        5920
+        3520,
+        5520
       ],
       "id": "329bc854-716d-42ce-a29d-66e0506fa38a",
       "name": "Update row in sheet44",
@@ -9350,6 +9389,77 @@
         "googleSheetsOAuth2Api": {
           "id": "hG2KjqFn0nRxAqmP",
           "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "30a49837-b923-41ce-88cb-942693e24e67",
+              "leftValue": "={{ $json.valido }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        6736,
+        -1440
+      ],
+      "id": "3f424bf6-a434-48f2-bbf0-c79675cf6d5d",
+      "name": "If10"
+    },
+    {
+      "parameters": {
+        "jsCode": "const fechaIngresada = new Date($('Telegram Trigger').first().json.message.text);\nconst hoy = new Date();\n\n\nfechaIngresada.setHours(0,0,0,0);\nhoy.setHours(0,0,0,0);\n\nif (fechaIngresada < hoy) {\n  return [{\n    json: {\n      valido: false,\n      error: 'No puedes agendar citas en fechas pasadas'\n    }\n  }];\n}\n\nreturn [{\n  json: {\n    valido: true,\n    fecha: $json.fecha\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        6576,
+        -1440
+      ],
+      "id": "8106d000-4493-457f-879a-d0f3d48bb1c0",
+      "name": "Code in JavaScript9"
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $node['Telegram Trigger'].json.message.chat.id }}",
+        "text": "Formato invalido, no puedes agendar citas en el pasado. Inténtalo de nuevo o escribe 9 para salir",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        6992,
+        -1344
+      ],
+      "id": "c45599c7-3e42-48cc-b84d-76b3700cd15c",
+      "name": "Send a text message19",
+      "webhookId": "48a8ad57-682c-4bfe-b1e6-51ce21ca9c17",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
         }
       }
     },
@@ -9391,10 +9501,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        7424,
-        2784
+        8544,
+        -608
       ],
-      "id": "ac9e299b-bbd7-4e93-b319-75347d004235",
+      "id": "91181898-d211-4d8f-8fee-b119b27107b7",
       "name": "If1"
     },
     {
@@ -9544,10 +9654,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        7984,
-        2496
+        9152,
+        -1072
       ],
-      "id": "88243dbb-68ed-4932-912a-6a92cffaa68f",
+      "id": "cce395a2-c0e3-4cef-bdd7-85b30792340b",
       "name": "Switch6"
     },
     {
@@ -9561,12 +9671,18 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        8192,
-        2192
+        9344,
+        -1440
       ],
-      "id": "2e53eb3f-0155-4a96-8347-64395b9ae3aa",
+      "id": "34d27ee5-5c53-4b99-a203-256e4bb54bfe",
       "name": "Send a text message15",
-      "webhookId": "04d65196-2feb-4edd-854d-eb0ed599f44e"
+      "webhookId": "04d65196-2feb-4edd-854d-eb0ed599f44e",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
     },
     {
       "parameters": {
@@ -9579,12 +9695,18 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        8224,
-        2880
+        9360,
+        -608
       ],
-      "id": "df6c4487-1f67-4fe9-b639-8363e350d897",
+      "id": "995666b0-9b92-4e07-953f-e1c301290046",
       "name": "Send a text message16",
-      "webhookId": "621877bc-98ca-497d-99c9-d83042a1ad3b"
+      "webhookId": "621877bc-98ca-497d-99c9-d83042a1ad3b",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
     },
     {
       "parameters": {
@@ -9597,12 +9719,770 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        8432,
-        2880
+        9568,
+        -608
       ],
-      "id": "10ee1001-1563-4fa5-9728-f91fc0cce88e",
+      "id": "7f07a451-5516-4026-9d56-33c16b3606a6",
       "name": "Send a text message17",
-      "webhookId": "f7cd6eb8-73d2-44f5-a589-cc167c525780"
+      "webhookId": "f7cd6eb8-73d2-44f5-a589-cc167c525780",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": 2,
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.first_name }}",
+            "pantalla_actual": "TAREAS",
+            "paso_actual": "1",
+            "datos_parciales_1": "=",
+            "timestamp_ultima_interaccion": "{{ $now }}"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_1",
+              "displayName": "datos_parciales_1",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_2",
+              "displayName": "datos_parciales_2",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_3",
+              "displayName": "datos_parciales_3",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_4",
+              "displayName": "datos_parciales_4",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_5",
+              "displayName": "datos_parciales_5",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_6",
+              "displayName": "datos_parciales_6",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "timestamp_ultima_interaccion",
+              "displayName": "timestamp_ultima_interaccion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        9536,
+        -1440
+      ],
+      "id": "dde7dc3f-0317-43bd-a118-4dcf4a724908",
+      "name": "Update row in sheet22",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const tareas = items.map(i => i.json);\n\nconst pendientes = tareas.filter(t => t.estado === 'Pendiente');\nconst completadas = tareas.filter(t => t.estado === 'Completada');\n\nlet mensaje = '📋 *Resumen de tareas*\\n\\n';\n\nif (pendientes.length === 0 && completadas.length === 0) {\n  mensaje += 'No tienes tareas registradas.';\n} else {\n  if (pendientes.length > 0) {\n    mensaje += '📅 *Tareas pendientes*\\n\\n';\n    pendientes.forEach((tarea, index) => {\n      mensaje +=\n        `${index + 1}. *${tarea.id_tarea}*\\n` +\n        `${tarea.titulo}\\n` +\n        `${tarea.prioridad}\\n` +\n        `${tarea.fecha_objetivo}\\n\\n`;\n    });\n  } else {\n    mensaje += '📅 *Tareas pendientes*\\n\\nNo tienes tareas pendientes.\\n\\n';\n  }\n\n  if (completadas.length > 0) {\n    mensaje += '✅ *Tareas completadas*\\n\\n';\n    completadas.forEach((tarea, index) => {\n      mensaje +=\n        `${index + 1}. *${tarea.id_tarea}*\\n` +\n        `${tarea.titulo}\\n` +\n        `${tarea.prioridad}\\n` +\n        `${tarea.fecha_objetivo}\\n\\n`;\n    });\n  }\n}\n\nconst chatId = $node[\"Telegram Trigger\"].json.message.chat.id;\n\nreturn [{\n  json: {\n    mensaje,\n    chatId\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        9600,
+        -1264
+      ],
+      "id": "a1540dfc-cdb3-498c-8b6b-077d89d10dcd",
+      "name": "Code in JavaScript6"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": 2,
+            "telegram_user": "={{ $json.result.chat.first_name }}",
+            "pantalla_actual": "MENU"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_1",
+              "displayName": "datos_parciales_1",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_2",
+              "displayName": "datos_parciales_2",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_3",
+              "displayName": "datos_parciales_3",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_4",
+              "displayName": "datos_parciales_4",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_5",
+              "displayName": "datos_parciales_5",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_6",
+              "displayName": "datos_parciales_6",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "timestamp_ultima_interaccion",
+              "displayName": "timestamp_ultima_interaccion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        10032,
+        -1264
+      ],
+      "id": "d35cab91-db27-45ca-98cd-d6b3f3f8caf2",
+      "name": "Update row in sheet17",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "Perfecto, vamos con tu tarea.\n\n¿Qué deseas hacer?\n\n1. Crear una nueva tarea\n2. Consultar tus tareas\n3. Reprogramar una tarea\n4. Cancelar una tarea\n5. Marcar una tarea como completada\n9. Volver al menú principal",
+        "height": 256,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        8784,
+        -1296
+      ],
+      "typeVersion": 1,
+      "id": "7264521a-198c-46c8-81de-5e6def34ef6a",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1215835491,
+          "mode": "list",
+          "cachedResultName": "TAREAS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1215835491"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        9360,
+        -1264
+      ],
+      "id": "d1574f21-32f1-4992-9d6a-0e01dd628f42",
+      "name": "Get row(s) in sheet26",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $json.chatId }}",
+        "text": "={{ $json.mensaje }}",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        9824,
+        -1264
+      ],
+      "id": "e7db20fa-7cf5-49ab-9e18-dcdc9b8917ee",
+      "name": "Send a text message46",
+      "webhookId": "85b21991-fc09-4cf9-ae30-9158610be872",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=Por favor, escribe el ID de la tarea que deseas reprogramar.\nEjemplo: TAREA-003\n",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        9360,
+        -1088
+      ],
+      "id": "1b2a8da2-1c52-4d96-8909-376f631fa15e",
+      "name": "Send a text message47",
+      "webhookId": "6d97bd7b-0b97-4ed2-9ff8-a3a9d569216b",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": 2,
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.first_name }}",
+            "pantalla_actual": "TAREA_EDIT"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_1",
+              "displayName": "datos_parciales_1",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_2",
+              "displayName": "datos_parciales_2",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_3",
+              "displayName": "datos_parciales_3",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_4",
+              "displayName": "datos_parciales_4",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_5",
+              "displayName": "datos_parciales_5",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_6",
+              "displayName": "datos_parciales_6",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "timestamp_ultima_interaccion",
+              "displayName": "timestamp_ultima_interaccion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        9568,
+        -1088
+      ],
+      "id": "6a76f566-72aa-4bd3-8177-d44fca4613df",
+      "name": "Update row in sheet46",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=Por favor, escribe el ID de la tarea que deseas eliminar.\nEjemplo: TAREA-001\n",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        9360,
+        -928
+      ],
+      "id": "020a966b-806a-49e5-9623-8c7d549c0127",
+      "name": "Send a text message59",
+      "webhookId": "6d97bd7b-0b97-4ed2-9ff8-a3a9d569216b",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": 2,
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.first_name }}",
+            "pantalla_actual": "TAREA_DELETE"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_1",
+              "displayName": "datos_parciales_1",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_2",
+              "displayName": "datos_parciales_2",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_3",
+              "displayName": "datos_parciales_3",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_4",
+              "displayName": "datos_parciales_4",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_5",
+              "displayName": "datos_parciales_5",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_6",
+              "displayName": "datos_parciales_6",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "timestamp_ultima_interaccion",
+              "displayName": "timestamp_ultima_interaccion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        9568,
+        -928
+      ],
+      "id": "63571ed8-a873-45af-8b9f-3abe866d15bc",
+      "name": "Update row in sheet56",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -9703,10 +10583,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        7984,
-        3152
+        9008,
+        -320
       ],
-      "id": "34864875-2308-4fe1-bf9a-ad392e76e48c",
+      "id": "6bed59f5-6c0a-45ec-9dba-83df192aab70",
       "name": "Switch7"
     },
     {
@@ -9715,15 +10595,21 @@
         "text": "=Paso 2 de 3\n¿Cuál es la fecha objetivo de la tarea?\n\nFormato: YYYY-MM-DD\nEjemplo: 2025-12-20\n\n9. Cancelar",
         "additionalFields": {}
       },
-      "id": "83128c30-bf3c-411f-9685-9ee075cda61b",
+      "id": "3063e9c2-3ba6-4d31-bb7b-be94e07546f2",
       "name": "Telegram OK8",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        8480,
-        3120
+        9504,
+        -352
       ],
-      "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c"
+      "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
     },
     {
       "parameters": {
@@ -9734,12 +10620,18 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        9008,
-        4288
+        10032,
+        816
       ],
-      "id": "95ac7dfb-bfa7-4cc8-a23c-7de352a28aed",
+      "id": "23d2c857-413e-47c7-987a-012d8815b85a",
       "name": "Send a text message18",
-      "webhookId": "537b6979-63b9-49c5-8610-35f1ef19571a"
+      "webhookId": "537b6979-63b9-49c5-8610-35f1ef19571a",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
     },
     {
       "parameters": {
@@ -9842,10 +10734,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        8768,
-        3920
+        9792,
+        448
       ],
-      "id": "58866f97-2acf-4348-bee2-52aab9835bc0",
+      "id": "c5a7f91b-7ae3-4698-8b53-afd36e257b96",
       "name": "Switch8"
     },
     {
@@ -9869,11 +10761,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        9008,
-        3648
+        10032,
+        176
       ],
-      "id": "8002698c-ead8-40c5-a960-3869f7d554b2",
-      "name": "Get row(s) in sheet9"
+      "id": "5f534e3d-5d3b-41be-8873-3b887c70c214",
+      "name": "Get row(s) in sheet9",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -9881,15 +10779,21 @@
         "text": "=Revisa la información de tu tarea:\n\nTítulo: {{ $json.datos_parciales_1 }}\nFecha objetivo: {{ $json.datos_parciales_2 }}\nPrioridad: {{ $json.datos_parciales_4 }}\n\n¿Qué deseas hacer?\n1. Confirmar y guardar\n2. Editar información\n3. Cancelar",
         "additionalFields": {}
       },
-      "id": "a3836c00-ff26-4dee-b4b3-a7e966aa3412",
+      "id": "abb3cb38-3a87-4eff-9b5f-cf828de15a5d",
       "name": "Telegram OK9",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        9472,
-        3648
+        10496,
+        176
       ],
-      "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c"
+      "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
     },
     {
       "parameters": {
@@ -9912,11 +10816,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        9008,
-        3856
+        10032,
+        384
       ],
-      "id": "7d2beda8-7771-412d-a763-8f3b9701b183",
-      "name": "Get row(s) in sheet10"
+      "id": "8b1d7ca7-55f7-44e0-b0c8-985219644870",
+      "name": "Get row(s) in sheet10",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -9924,15 +10834,21 @@
         "text": "=Revisa la información de tu tarea:\n\nTítulo: {{ $json.datos_parciales_1 }}\nFecha objetivo: {{ $json.datos_parciales_2 }}\nPrioridad: {{ $json.datos_parciales_4 }}\n\n¿Qué deseas hacer?\n1. Confirmar y guardar\n2. Editar información\n3. Cancelar",
         "additionalFields": {}
       },
-      "id": "b45b44f5-862a-4d80-b2fe-c1bcee9cd14e",
+      "id": "8dae3bac-875c-4f7b-8c70-e59a5fbdaa64",
       "name": "Telegram OK10",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        9472,
-        3856
+        10496,
+        384
       ],
-      "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c"
+      "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
     },
     {
       "parameters": {
@@ -9955,11 +10871,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        9008,
-        4064
+        10032,
+        592
       ],
-      "id": "5cb075bf-c279-4cdd-a695-74b8c984b1ad",
-      "name": "Get row(s) in sheet11"
+      "id": "a46054d8-9117-4fb5-b3a5-b052a274f259",
+      "name": "Get row(s) in sheet11",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -9967,15 +10889,21 @@
         "text": "=Revisa la información de tu tarea:\n\nTítulo: {{ $json.datos_parciales_1 }}\nFecha objetivo: {{ $json.datos_parciales_2 }}\nPrioridad: {{ $json.datos_parciales_4 }}\n\n¿Qué deseas hacer?\n1. Confirmar y guardar\n2. Editar información\n3. Cancelar",
         "additionalFields": {}
       },
-      "id": "929f2b60-cbf5-474d-9cff-b6e6041e3855",
+      "id": "24031224-434a-4e2f-bc6d-e12b377ff63d",
       "name": "Telegram OK11",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        9472,
-        4064
+        10496,
+        592
       ],
-      "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c"
+      "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
     },
     {
       "parameters": {
@@ -9989,13 +10917,13 @@
           ]
         }
       },
-      "id": "08485031-9afd-43c1-b099-5805c673a49e",
+      "id": "22be8240-60fb-4547-83ae-e0b6055f0e9c",
       "name": "Validar formato YYYY-MM-DD1",
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        8480,
-        3312
+        9504,
+        -160
       ]
     },
     {
@@ -10004,15 +10932,21 @@
         "text": "=Fecha inválida.\nFormato requerido:YYYY-MM-DD\nEjemplo: 2025-12-20\nIntenta nuevamente.",
         "additionalFields": {}
       },
-      "id": "3d3925eb-fa89-4a5b-8d8b-5cda7c50cd79",
+      "id": "a0d6f14e-80b4-453b-be21-ab0810c8c4a0",
       "name": "Telegram Error2",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        8816,
-        3456
+        9840,
+        -16
       ],
-      "webhookId": "58122352-e475-4894-bfaf-c3aa5ecc6ce5"
+      "webhookId": "58122352-e475-4894-bfaf-c3aa5ecc6ce5",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
     },
     {
       "parameters": {
@@ -10035,11 +10969,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8832,
-        3232
+        9856,
+        -240
       ],
-      "id": "f29d8672-fe89-4e72-92ff-604cb13f0f2c",
-      "name": "Get row(s) in sheet12"
+      "id": "a50c3c10-7228-4968-b5f5-b776c4f8c41e",
+      "name": "Get row(s) in sheet12",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -10047,15 +10987,21 @@
         "text": "=Paso 3 de 3\n¿Cuál es la prioridad de la tarea?\n\n1. Baja\n2. Media\n3. Alta\n9. Cancelar",
         "additionalFields": {}
       },
-      "id": "96a312ac-87a8-4193-9f52-3fc61aec6f85",
+      "id": "9abec134-0784-47e7-8898-f3b805dade74",
       "name": "Telegram OK12",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        9296,
-        3232
+        10320,
+        -240
       ],
-      "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c"
+      "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
     },
     {
       "parameters": {
@@ -10208,11 +11154,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        9056,
-        3232
+        10080,
+        -240
       ],
-      "id": "77114f90-19a6-4446-9e7f-c0900c26647a",
-      "name": "Update row in sheet24"
+      "id": "1fcf16e7-2521-4b98-a7df-f63ddf8e5769",
+      "name": "Update row in sheet24",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -10364,11 +11316,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8256,
-        3120
+        9280,
+        -352
       ],
-      "id": "fad07976-e352-4179-9f41-2a37249cf4b4",
-      "name": "Update row in sheet25"
+      "id": "eb80b129-038e-48a7-974f-bf00d8e6eb9f",
+      "name": "Update row in sheet25",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -10521,11 +11479,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        9232,
-        3648
+        10256,
+        176
       ],
-      "id": "474c4220-ba8c-41e3-af0b-1a6839638770",
-      "name": "Update row in sheet26"
+      "id": "cdc16207-ad56-46ce-8b8f-ff40e499b61a",
+      "name": "Update row in sheet26",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -10678,11 +11642,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        9232,
-        3856
+        10256,
+        384
       ],
-      "id": "6438953f-49cd-4c29-8246-82afaee1be51",
-      "name": "Update row in sheet27"
+      "id": "f13d79bb-e369-41a9-b7ec-b194ec536d94",
+      "name": "Update row in sheet27",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -10835,11 +11805,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        9232,
-        4064
+        10256,
+        592
       ],
-      "id": "ff603155-bad1-4b94-96de-4cc28a3ef38d",
-      "name": "Update row in sheet28"
+      "id": "281b0872-8672-4a24-8d19-fbb29dc5a672",
+      "name": "Update row in sheet28",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -10920,10 +11896,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        8400,
-        4464
+        9360,
+        1056
       ],
-      "id": "465f5132-6c0e-43f3-9b16-8193e4cb449c",
+      "id": "21dc719b-adea-499e-bd9d-c2eefface9ec",
       "name": "Switch9"
     },
     {
@@ -11064,11 +12040,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8704,
-        4864
+        9664,
+        1456
       ],
-      "id": "58e902df-b984-4dc8-a68b-72852321d137",
-      "name": "Update row in sheet18"
+      "id": "bcc83b69-74bd-4b32-8d10-a19669adcec2",
+      "name": "Update row in sheet18",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -11079,12 +12061,18 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        8960,
-        4864
+        9920,
+        1456
       ],
-      "id": "c526849a-79a9-42c8-88f7-dda14705e9e6",
+      "id": "fc1d4f16-5c81-4d54-9630-8f18afab2b43",
       "name": "Send a text message20",
-      "webhookId": "dc8a9a45-0711-45a4-829a-7ab666828377"
+      "webhookId": "dc8a9a45-0711-45a4-829a-7ab666828377",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
     },
     {
       "parameters": {
@@ -11180,11 +12168,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8720,
-        4672
+        9680,
+        1264
       ],
-      "id": "b7d986f2-6c46-4085-8a69-4ca1cd2a9da6",
-      "name": "Update row in sheet19"
+      "id": "8f5458f3-7910-4983-b710-69acd135faf2",
+      "name": "Update row in sheet19",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -11197,165 +12191,18 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        8976,
-        4672
+        9936,
+        1264
       ],
-      "id": "be65160d-6336-4706-b628-290789472d40",
+      "id": "19bd1803-3e47-442c-be72-15a20ee958fe",
       "name": "Send a text message21",
-      "webhookId": "04d65196-2feb-4edd-854d-eb0ed599f44e"
-    },
-    {
-      "parameters": {
-        "operation": "update",
-        "documentId": {
-          "__rl": true,
-          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
-          "mode": "list",
-          "cachedResultName": "AgendaBot Services",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
-        },
-        "sheetName": {
-          "__rl": true,
-          "value": 1920024994,
-          "mode": "list",
-          "cachedResultName": "SESSIONS",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
-        },
-        "columns": {
-          "mappingMode": "defineBelow",
-          "value": {
-            "row_number": 2,
-            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.first_name }}",
-            "pantalla_actual": "TAREAS",
-            "paso_actual": "1",
-            "datos_parciales_1": "=",
-            "timestamp_ultima_interaccion": "{{ $now }}"
-          },
-          "matchingColumns": [
-            "row_number"
-          ],
-          "schema": [
-            {
-              "id": "telegram_user",
-              "displayName": "telegram_user",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "pantalla_actual",
-              "displayName": "pantalla_actual",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "paso_actual",
-              "displayName": "paso_actual",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "datos_parciales_1",
-              "displayName": "datos_parciales_1",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "datos_parciales_2",
-              "displayName": "datos_parciales_2",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "datos_parciales_3",
-              "displayName": "datos_parciales_3",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "datos_parciales_4",
-              "displayName": "datos_parciales_4",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "datos_parciales_5",
-              "displayName": "datos_parciales_5",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "datos_parciales_6",
-              "displayName": "datos_parciales_6",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "timestamp_ultima_interaccion",
-              "displayName": "timestamp_ultima_interaccion",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "row_number",
-              "displayName": "row_number",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "number",
-              "canBeUsedToMatch": true,
-              "readOnly": true,
-              "removed": false
-            }
-          ],
-          "attemptToConvertTypes": false,
-          "convertFieldsToString": false
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.googleSheets",
-      "typeVersion": 4.7,
-      "position": [
-        8384,
-        2192
-      ],
-      "id": "fb6d0d72-5722-43a0-b51e-e56eb6029454",
-      "name": "Update row in sheet22"
+      "webhookId": "04d65196-2feb-4edd-854d-eb0ed599f44e",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
     },
     {
       "parameters": {
@@ -11449,183 +12296,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        9616,
-        4480
+        10576,
+        1072
       ],
-      "id": "0f36edbd-9684-455d-8bd6-c44328c7efb5",
-      "name": "Append row in sheet2"
-    },
-    {
-      "parameters": {
-        "jsCode": "const tareas = items.map(i => i.json);\n\nconst pendientes = tareas.filter(t => t.estado === 'Pendiente');\nconst completadas = tareas.filter(t => t.estado === 'Completada');\n\nlet mensaje = '📋 *Resumen de tareas*\\n\\n';\n\nif (pendientes.length === 0 && completadas.length === 0) {\n  mensaje += 'No tienes tareas registradas.';\n} else {\n  if (pendientes.length > 0) {\n    mensaje += '📅 *Tareas pendientes*\\n\\n';\n    pendientes.forEach((tarea, index) => {\n      mensaje +=\n        `${index + 1}. *${tarea.id_tarea}*\\n` +\n        `${tarea.titulo}\\n` +\n        `${tarea.prioridad}\\n` +\n        `${tarea.fecha_objetivo}\\n\\n`;\n    });\n  } else {\n    mensaje += '📅 *Tareas pendientes*\\n\\nNo tienes tareas pendientes.\\n\\n';\n  }\n\n  if (completadas.length > 0) {\n    mensaje += '✅ *Tareas completadas*\\n\\n';\n    completadas.forEach((tarea, index) => {\n      mensaje +=\n        `${index + 1}. *${tarea.id_tarea}*\\n` +\n        `${tarea.titulo}\\n` +\n        `${tarea.prioridad}\\n` +\n        `${tarea.fecha_objetivo}\\n\\n`;\n    });\n  }\n}\n\nconst chatId = $node[\"Telegram Trigger\"].json.message.chat.id;\n\nreturn [{\n  json: {\n    mensaje,\n    chatId\n  }\n}];\n"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        8432,
-        2368
-      ],
-      "id": "2bcf507b-2306-4ec8-8358-2c8c51415b70",
-      "name": "Code in JavaScript6"
-    },
-    {
-      "parameters": {
-        "operation": "update",
-        "documentId": {
-          "__rl": true,
-          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
-          "mode": "list",
-          "cachedResultName": "AgendaBot Services",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
-        },
-        "sheetName": {
-          "__rl": true,
-          "value": 1920024994,
-          "mode": "list",
-          "cachedResultName": "SESSIONS",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
-        },
-        "columns": {
-          "mappingMode": "defineBelow",
-          "value": {
-            "row_number": 2,
-            "telegram_user": "={{ $json.result.chat.first_name }}",
-            "pantalla_actual": "MENU"
-          },
-          "matchingColumns": [
-            "row_number"
-          ],
-          "schema": [
-            {
-              "id": "telegram_user",
-              "displayName": "telegram_user",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "pantalla_actual",
-              "displayName": "pantalla_actual",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "paso_actual",
-              "displayName": "paso_actual",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "datos_parciales_1",
-              "displayName": "datos_parciales_1",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "datos_parciales_2",
-              "displayName": "datos_parciales_2",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "datos_parciales_3",
-              "displayName": "datos_parciales_3",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "datos_parciales_4",
-              "displayName": "datos_parciales_4",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "datos_parciales_5",
-              "displayName": "datos_parciales_5",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "datos_parciales_6",
-              "displayName": "datos_parciales_6",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "timestamp_ultima_interaccion",
-              "displayName": "timestamp_ultima_interaccion",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "row_number",
-              "displayName": "row_number",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "number",
-              "canBeUsedToMatch": true,
-              "readOnly": true,
-              "removed": false
-            }
-          ],
-          "attemptToConvertTypes": false,
-          "convertFieldsToString": false
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.googleSheets",
-      "typeVersion": 4.7,
-      "position": [
-        8864,
-        2368
-      ],
-      "id": "043c36b6-142a-4a00-8ecc-23791aa7aea8",
-      "name": "Update row in sheet17"
-    },
-    {
-      "parameters": {
-        "content": "Perfecto, vamos con tu tarea.\n\n¿Qué deseas hacer?\n\n1. Crear una nueva tarea\n2. Consultar tus tareas\n3. Reprogramar una tarea\n4. Cancelar una tarea\n5. Marcar una tarea como completada\n9. Volver al menú principal",
-        "height": 256,
-        "color": 6
-      },
-      "type": "n8n-nodes-base.stickyNote",
-      "position": [
-        7712,
-        2208
-      ],
-      "typeVersion": 1,
-      "id": "5b4d01f5-28b6-4541-95df-51c021993017",
-      "name": "Sticky Note5"
+      "id": "6ad47f3b-3f70-4268-8d49-05621f1196fa",
+      "name": "Append row in sheet2",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -11648,11 +12329,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        9168,
-        4480
+        10128,
+        1072
       ],
-      "id": "efdeaef2-a318-47db-9177-dafb0492e011",
-      "name": "Get row(s) in sheet24"
+      "id": "d5a9ca12-dbab-4830-bc64-067495679151",
+      "name": "Get row(s) in sheet24",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -11665,14 +12352,20 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        9840,
-        4480
+        10800,
+        1072
       ],
-      "id": "b690598a-3a3f-48c3-b532-d2bb08e2ab3a",
+      "id": "3556ef66-2445-4501-b864-8727de0a6cb7",
       "name": "Send a text message44",
       "webhookId": "3467d3a3-b94f-4550-b6ce-a4b5b14025a0",
       "retryOnFail": true,
       "maxTries": 5,
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      },
       "onError": "continueRegularOutput"
     },
     {
@@ -11829,11 +12522,17 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        10224,
-        4480
+        11184,
+        1072
       ],
-      "id": "dc852101-3236-46e0-818b-ed05137e9e0a",
-      "name": "Update row in sheet45"
+      "id": "06b598c7-2d91-4e8f-876e-fa6b04862f8a",
+      "name": "Update row in sheet45",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -11863,12 +12562,18 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8720,
-        4480
+        9680,
+        1072
       ],
-      "id": "3fbc4f8f-776e-4de0-86fe-19261d464aed",
+      "id": "31d2cbd8-5d75-4b08-8b11-a97a771e0274",
       "name": "Get row(s) in sheet25",
       "alwaysOutputData": true,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      },
       "onError": "continueRegularOutput"
     },
     {
@@ -11878,10 +12583,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        8928,
-        4480
+        9888,
+        1072
       ],
-      "id": "b81bae6e-e285-4d5e-8e62-fd830bfcce8f",
+      "id": "87eeacb0-98fd-4aae-9839-708decf530fb",
       "name": "Code in JavaScript7"
     },
     {
@@ -11891,10 +12596,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        9392,
-        4480
+        10352,
+        1072
       ],
-      "id": "92fd475a-84eb-423b-86e6-4375710fcf78",
+      "id": "37ecf815-6f28-4544-a94e-81cdcb0eb68f",
       "name": "Code in JavaScript8"
     },
     {
@@ -11908,14 +12613,20 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        10448,
-        4480
+        11408,
+        1072
       ],
-      "id": "8a90e0b9-6645-4748-8417-87cfa9eefc05",
+      "id": "05a57ea7-6ce1-40f3-bad0-b0854b1733ce",
       "name": "Send a text message45",
       "webhookId": "67f4070f-d09c-4373-8dcb-d45994d560f6",
       "retryOnFail": true,
-      "maxTries": 5
+      "maxTries": 5,
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
     },
     {
       "parameters": {
@@ -11934,10 +12645,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        10032,
-        4480
+        10992,
+        1072
       ],
-      "id": "9a6ef3de-10f2-4adb-8a9d-8c4cc9b58899",
+      "id": "b20577d7-7a21-4e72-b0fb-8f01c6d72c40",
       "name": "Edit Fields9"
     },
     {
@@ -11956,21 +12667,219 @@
           "cachedResultName": "TAREAS",
           "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1215835491"
         },
+        "options": {
+          "dataLocationOnSheet": {
+            "values": {
+              "rangeDefinition": "detectAutomatically"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        6720,
+        2032
+      ],
+      "id": "c3569f66-10bb-47d6-88a0-57e0c5f1eb47",
+      "name": "Get row(s) in sheet27",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": 2,
+            "telegram_user": "={{ $node[\"Telegram Trigger\"].json.message.chat.first_name }} ",
+            "pantalla_actual": "TAREA_EDIT",
+            "datos_parciales_1": "={{ $node[\"Telegram Trigger\"].json.message.text }}",
+            "paso_actual": "TAREA_EDICION"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_1",
+              "displayName": "datos_parciales_1",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_2",
+              "displayName": "datos_parciales_2",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_3",
+              "displayName": "datos_parciales_3",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_4",
+              "displayName": "datos_parciales_4",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_5",
+              "displayName": "datos_parciales_5",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_6",
+              "displayName": "datos_parciales_6",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "timestamp_ultima_interaccion",
+              "displayName": "timestamp_ultima_interaccion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
         "options": {}
       },
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        8192,
-        2368
+        7584,
+        2096
       ],
-      "id": "10c94df9-e595-4ce5-bcfe-e442a711d40a",
-      "name": "Get row(s) in sheet26"
+      "id": "43e05e1e-4bf1-4346-b624-0cd98dd6b0e6",
+      "name": "Update row in sheet47",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
-        "chatId": "={{ $json.chatId }}",
-        "text": "={{ $json.mensaje }}",
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "19cf076b-a41a-4007-bbc5-e4b072ed2ed2",
+              "leftValue": "={{ $('Get row(s) in sheet').item.json.paso_actual }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "empty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        6320,
+        2384
+      ],
+      "id": "f584a1fc-cbf3-4d15-9d04-848b06917715",
+      "name": "If11"
+    },
+    {
+      "parameters": {
+        "chatId": "={{$node[\"Telegram Trigger\"].json.message.chat.id}}",
+        "text": "={{ $('Code in JavaScript10').item.json.error }}",
         "additionalFields": {
           "appendAttribution": false
         }
@@ -11978,28 +12887,2132 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        8656,
-        2368
+        7584,
+        1888
       ],
-      "id": "a268f2c9-542e-48de-8f43-bd6181e6a804",
-      "name": "Send a text message46",
-      "webhookId": "85b21991-fc09-4cf9-ae30-9158610be872"
+      "id": "d754dd59-ff73-4e69-9b28-dba5cadd233f",
+      "name": "Send a text message48",
+      "webhookId": "6aead782-f551-42fd-94be-6a582ce924f8",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $node[\"Telegram Trigger\"].json.message.chat.id }} ",
+        "text": "=¿Qué deseas modificar de la cita {{$json.datos_parciales_1}}?\n\n1) Fecha\n2) Cancelar",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        7824,
+        2096
+      ],
+      "id": "72bfda8a-c157-47ca-a0fd-3804d9791af0",
+      "name": "Send a text message49",
+      "webhookId": "0143dc20-4f34-4126-a2f0-8aeb18b64112",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('Telegram Trigger').item.json.message.text }}",
+                    "rightValue": "1",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "ec675a21-b990-4a0b-b606-021f5e25e71e"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "dca7b002-8fba-4618-add1-6e508cc3f0ef",
+                    "leftValue": "={{ $('Telegram Trigger').item.json.message.text }}",
+                    "rightValue": "2",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        7248,
+        2528
+      ],
+      "id": "b816cdbd-5320-43a1-b2ba-d530af8141d9",
+      "name": "Switch12"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "d9a64f2e-d27d-4b36-9cb0-93827b2a3636",
+              "leftValue": "={{ $('Get row(s) in sheet').item.json.datos_parciales_2.toString() }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "empty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        6736,
+        2800
+      ],
+      "id": "efa7a2a8-bccb-4595-86e2-4a2079627a68",
+      "name": "If12"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $('Telegram Trigger').item.json.message.text }}",
+              "operation": "regex",
+              "value2": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$"
+            }
+          ]
+        }
+      },
+      "id": "9c5f8bc0-15bc-46aa-8942-8a46fa5f57d6",
+      "name": "Validar formato YYYY-MM-DD3",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        7056,
+        3040
+      ]
     },
     {
       "parameters": {
         "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
-        "text": "=Por favor, escribe el ID de la tarea que deseas reprogramar.\nEjemplo: TAREA-003\n",
+        "text": "=Fecha actualizada.",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "id": "8a1efced-bcde-4f9d-8cf5-fae6b4c3714a",
+      "name": "Telegram OK14",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1,
+      "position": [
+        8704,
+        2944
+      ],
+      "webhookId": "6ca47415-d373-4e4a-ba53-f0e4facfeb2c",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=Fecha inválida.\nFormato requerido:YYYY-MM-DD\nEjemplo: 2026-12-20\nIntenta nuevamente.",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "id": "6ce19aad-3b40-48a4-a10c-4b7d08dd14c3",
+      "name": "Telegram Error5",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1,
+      "position": [
+        7440,
+        3184
+      ],
+      "webhookId": "58122352-e475-4894-bfaf-c3aa5ecc6ce5",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": 2,
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.first_name }}",
+            "pantalla_actual": "TAREA_EDIT",
+            "paso_actual": "TAREA_EDICION",
+            "datos_parciales_1": "={{ $('Get row(s) in sheet').item.json.datos_parciales_1 }}",
+            "timestamp_ultima_interaccion": "={{ $now }}",
+            "datos_parciales_2": "={{ $('Telegram Trigger').item.json.message.text }}"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_1",
+              "displayName": "datos_parciales_1",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_2",
+              "displayName": "datos_parciales_2",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_3",
+              "displayName": "datos_parciales_3",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_4",
+              "displayName": "datos_parciales_4",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_5",
+              "displayName": "datos_parciales_5",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_6",
+              "displayName": "datos_parciales_6",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "timestamp_ultima_interaccion",
+              "displayName": "timestamp_ultima_interaccion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        7440,
+        2944
+      ],
+      "id": "cdd2d1be-f525-48dd-84c5-c04041f2d6f4",
+      "name": "Update row in sheet48",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=Ingrese la fecha nueva.\nFormato requerido:YYYY-MM-DD\nEjemplo: 2026-12-20",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        7600,
+        2368
+      ],
+      "id": "f59dde99-a1fc-4370-b0ae-f6d1bcc39651",
+      "name": "Send a text message50",
+      "webhookId": "091ffb67-df42-49eb-a2b1-1e8a031acfc4",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.from.first_name }}",
+            "pantalla_actual": "TAREA_EDIT",
+            "paso_actual": "TAREA_EDICION",
+            "datos_parciales_1": "={{ $('Get row(s) in sheet28').item.json.datos_parciales_1 }}",
+            "row_number": 2,
+            "datos_parciales_2": "1",
+            "timestamp_ultima_interaccion": "={{ $now }}"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_1",
+              "displayName": "datos_parciales_1",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_2",
+              "displayName": "datos_parciales_2",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_3",
+              "displayName": "datos_parciales_3",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_4",
+              "displayName": "datos_parciales_4",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_5",
+              "displayName": "datos_parciales_5",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_6",
+              "displayName": "datos_parciales_6",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "timestamp_ultima_interaccion",
+              "displayName": "timestamp_ultima_interaccion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        7840,
+        2368
+      ],
+      "id": "0b48ff79-afb6-4a0f-b285-a0bd928330f0",
+      "name": "Update row in sheet49",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        7024,
+        2528
+      ],
+      "id": "cfa1e8cf-0047-4449-a9ec-01f13c6fc807",
+      "name": "Get row(s) in sheet28",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": 2,
+            "pantalla_actual": "MENU",
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.first_name }}",
+            "paso_actual": "={{ $json.Vacio }}",
+            "datos_parciales_1": "={{ $json.Vacio }}",
+            "datos_parciales_2": "={{ $json.Vacio }}",
+            "timestamp_ultima_interaccion": "={{ $json.Vacio }}"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_1",
+              "displayName": "datos_parciales_1",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_2",
+              "displayName": "datos_parciales_2",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_3",
+              "displayName": "datos_parciales_3",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_4",
+              "displayName": "datos_parciales_4",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_5",
+              "displayName": "datos_parciales_5",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_6",
+              "displayName": "datos_parciales_6",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "timestamp_ultima_interaccion",
+              "displayName": "timestamp_ultima_interaccion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        8048,
+        2640
+      ],
+      "id": "9d5d7115-aaaf-4796-96c7-f4fc9d7b9b60",
+      "name": "Update row in sheet51",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=¿En qué te puedo ayudar hoy?\n\nMenú principal:\n0. Ayuda\n1. Agenda (citas)\n2. Tareas\n3. Recordatorios\n4. Hábitos\n5. Listas\n6. Reportes\n7. Configuración\n8. Administrador\n\nSugerencia:\n\nSi quieres empezar rápido, te recomiendo la opción 1 (Agenda).",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        7600,
+        2640
+      ],
+      "id": "b6c7cd01-257c-4c04-899a-07b5e0f3e646",
+      "name": "Send a text message52",
+      "webhookId": "67f4070f-d09c-4373-8dcb-d45994d560f6",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6ec5bccf-438b-4d68-8947-62e86d961fc3",
+              "name": "Vacio",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        7840,
+        2640
+      ],
+      "id": "f2567e68-eebe-49a9-badc-ccc1ee72117a",
+      "name": "Edit Fields10"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1215835491,
+          "mode": "list",
+          "cachedResultName": "TAREAS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1215835491"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id_tarea": "={{ $('Get row(s) in sheet').item.json.datos_parciales_1 }}",
+            "fecha_objetivo": "={{ $('Update row in sheet48').item.json.datos_parciales_2 }}"
+          },
+          "matchingColumns": [
+            "id_tarea"
+          ],
+          "schema": [
+            {
+              "id": "id_tarea",
+              "displayName": "id_tarea",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "titulo",
+              "displayName": "titulo",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "prioridad",
+              "displayName": "prioridad",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "estado",
+              "displayName": "estado",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "fecha_objetivo",
+              "displayName": "fecha_objetivo",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "creado_por",
+              "displayName": "creado_por",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        7952,
+        2944
+      ],
+      "id": "e26de59d-ad8f-4813-ab3c-1ad54f75e293",
+      "name": "Update row in sheet52",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "7a039b49-2c5e-4e19-8dc1-35eabd92e9e2",
+              "name": "Vacio",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        8208,
+        2944
+      ],
+      "id": "18e91b34-3952-4d9f-91bc-980b6947c6dd",
+      "name": "Edit Fields11"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": 2,
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.first_name }}",
+            "pantalla_actual": "MENU",
+            "paso_actual": "={{ $json.Vacio }}",
+            "datos_parciales_1": "={{ $json.Vacio }}",
+            "datos_parciales_2": "={{ $json.Vacio }}",
+            "datos_parciales_3": "={{ $json.Vacio }}",
+            "datos_parciales_4": "={{ $json.Vacio }}",
+            "datos_parciales_5": "={{ $json.Vacio }}",
+            "datos_parciales_6": "={{ $json.Vacio }}",
+            "timestamp_ultima_interaccion": "={{ $json.Vacio }}"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_1",
+              "displayName": "datos_parciales_1",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_2",
+              "displayName": "datos_parciales_2",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_3",
+              "displayName": "datos_parciales_3",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_4",
+              "displayName": "datos_parciales_4",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_5",
+              "displayName": "datos_parciales_5",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "datos_parciales_6",
+              "displayName": "datos_parciales_6",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "timestamp_ultima_interaccion",
+              "displayName": "timestamp_ultima_interaccion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        8464,
+        2944
+      ],
+      "id": "f83965aa-0fc4-4a83-b688-90453528be82",
+      "name": "Update row in sheet55",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=¿En qué te puedo ayudar hoy?\n\nMenú principal:\n0. Ayuda\n1. Agenda (citas)\n2. Tareas\n3. Recordatorios\n4. Hábitos\n5. Listas\n6. Reportes\n7. Configuración\n8. Administrador\n\nSugerencia:\n\nSi quieres empezar rápido, te recomiendo la opción 1 (Agenda).",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        8928,
+        2944
+      ],
+      "id": "23673536-ec4c-46b3-8985-c4b95dc9d964",
+      "name": "Send a text message53",
+      "webhookId": "67f4070f-d09c-4373-8dcb-d45994d560f6",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1215835491,
+          "mode": "list",
+          "cachedResultName": "TAREAS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1215835491"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "id_tarea",
+              "lookupValue": "={{ $json.datos_parciales_1 }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        7696,
+        2944
+      ],
+      "id": "34afc5f9-e81a-4cc2-9fe2-376e2c77ead5",
+      "name": "Get row(s) in sheet30",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const idIngresado = $node[\"Telegram Trigger\"].json.message.text.trim().toUpperCase();\nconst tareas = items.map(i => i.json);\n\nconst tarea = tareas.find(c => c.id_tarea === idIngresado);\n\nif (!tarea) {\n  return [{\n    json: {\n      error: 'No se encontró una tarea con ese ID. Inténtalo nuevamente.'\n    }\n  }];\n}\n\nif (tarea.estado !== 'Pendiente') {\n  return [{\n    json: {\n      error: 'Solo se pueden editar tareas en estado Pendiente.'\n    }\n  }];\n}\n\nreturn [{\n  json: {\n    id_tarea: tarea.id_tarea,\n    rowNumber: tarea.rowNumber,\n    estado_actual: tarea.estado\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        6960,
+        2032
+      ],
+      "id": "d6a5424f-126d-48f7-bc3f-c0a30420b52c",
+      "name": "Code in JavaScript10"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "f176d09d-3f91-48cd-b6cd-4224a025f519",
+              "leftValue": "={{ $json.error }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        7168,
+        2032
+      ],
+      "id": "e7a39eef-bf63-49f0-8a5f-6eadf6db0751",
+      "name": "If13"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1215835491,
+          "mode": "list",
+          "cachedResultName": "TAREAS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1215835491"
+        },
+        "options": {
+          "dataLocationOnSheet": {
+            "values": {
+              "rangeDefinition": "detectAutomatically"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        6736,
+        3616
+      ],
+      "id": "14491078-c180-4136-be21-1bf4dbf058ac",
+      "name": "Get row(s) in sheet29",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": 2,
+            "telegram_user": "={{ $node[\"Telegram Trigger\"].json.message.chat.first_name }} ",
+            "pantalla_actual": "TAREA_DELETE",
+            "datos_parciales_1": "={{ $node[\"Telegram Trigger\"].json.message.text }}",
+            "paso_actual": "DELETE2"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_1",
+              "displayName": "datos_parciales_1",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_2",
+              "displayName": "datos_parciales_2",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_3",
+              "displayName": "datos_parciales_3",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_4",
+              "displayName": "datos_parciales_4",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_5",
+              "displayName": "datos_parciales_5",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_6",
+              "displayName": "datos_parciales_6",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "timestamp_ultima_interaccion",
+              "displayName": "timestamp_ultima_interaccion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        7600,
+        3680
+      ],
+      "id": "1e8bb88e-d0de-4f81-b6df-268adfa2c9ac",
+      "name": "Update row in sheet50",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "19cf076b-a41a-4007-bbc5-e4b072ed2ed2",
+              "leftValue": "={{ $('Get row(s) in sheet').item.json.paso_actual }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "empty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": "={{ false }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        6336,
+        3968
+      ],
+      "id": "43ef9e9f-f699-4a40-b9f4-1678f8d81dbd",
+      "name": "If14"
+    },
+    {
+      "parameters": {
+        "chatId": "={{$node[\"Telegram Trigger\"].json.message.chat.id}}",
+        "text": "={{ $('Code in JavaScript11').item.json.error }}",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        7600,
+        3472
+      ],
+      "id": "76c4a21a-a23e-4ef8-8468-e32c1e6b45fe",
+      "name": "Send a text message51",
+      "webhookId": "6aead782-f551-42fd-94be-6a582ce924f8",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $node[\"Telegram Trigger\"].json.message.chat.id }} ",
+        "text": "=¿Estas seguro/a de querer eliminar la tarea con ID {{$json.datos_parciales_1}}?\n\n1) Si\n2) Cancear",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        7840,
+        3680
+      ],
+      "id": "955bbea3-64f9-44f4-b228-a1a64c5ba7e5",
+      "name": "Send a text message54",
+      "webhookId": "0143dc20-4f34-4126-a2f0-8aeb18b64112",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1215835491,
+          "mode": "list",
+          "cachedResultName": "TAREAS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1215835491"
+        },
+        "startIndex": "={{ $json.row_number }}"
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        7616,
+        4192
+      ],
+      "id": "29bbc3ae-edb6-4bd4-808a-0bce27eaa0a3",
+      "name": "Delete rows or columns from sheet1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "ce164293-e156-447c-a402-9c7ca61cced3",
+              "leftValue": "={{ $('Telegram Trigger').item.json.message.text.toString() }}",
+              "rightValue": "1",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        6880,
+        4336
+      ],
+      "id": "24d7a80d-c74e-47e3-b440-4517adb7a670",
+      "name": "If15"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1215835491,
+          "mode": "list",
+          "cachedResultName": "TAREAS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1215835491"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "id_tarea",
+              "lookupValue": "={{ $json.datos_parciales_1 }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        7392,
+        4192
+      ],
+      "id": "697c27c5-07a8-488e-8f2f-76967d3b4e52",
+      "name": "Get row(s) in sheet31",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        7152,
+        4192
+      ],
+      "id": "78914002-dc79-4f59-ae2a-b29f3e898f1f",
+      "name": "Get row(s) in sheet32",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "Registro eliminado.",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        8208,
+        4192
+      ],
+      "id": "c6599d87-f702-4eb7-b649-c12846c87969",
+      "name": "Send a text message55",
+      "webhookId": "2fc1d56f-664b-4d51-8648-04c81e4ae6dd",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=¿En qué te puedo ayudar hoy?\n\nMenú principal:\n0. Ayuda\n1. Agenda (citas)\n2. Tareas\n3. Recordatorios\n4. Hábitos\n5. Listas\n6. Reportes\n7. Configuración\n8. Administrador\n\nSugerencia:\n\nSi quieres empezar rápido, te recomiendo la opción 1 (Agenda).",
         "additionalFields": {}
       },
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        8320,
-        2544
+        8416,
+        4192
       ],
-      "id": "934b14bb-0cbc-48d4-913a-9960499af721",
-      "name": "Send a text message47",
-      "webhookId": "6d97bd7b-0b97-4ed2-9ff8-a3a9d569216b"
+      "id": "b2da2fdf-4ea6-45aa-a799-5bb3857d64f3",
+      "name": "Send a text message56",
+      "webhookId": "e2b25fb4-3e1b-4601-b419-20a208b6776c",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "Proceso cancelado.",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        7136,
+        4464
+      ],
+      "id": "3b634512-810a-445b-8e37-b5e75dfd6e39",
+      "name": "Send a text message57",
+      "webhookId": "4f13f1d8-19ba-4d12-baa8-c36850443a16",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=¿En qué te puedo ayudar hoy?\n\nMenú principal:\n0. Ayuda\n1. Agenda (citas)\n2. Tareas\n3. Recordatorios\n4. Hábitos\n5. Listas\n6. Reportes\n7. Configuración\n8. Administrador\n\nSugerencia:\n\nSi quieres empezar rápido, te recomiendo la opción 1 (Agenda).",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        7824,
+        4464
+      ],
+      "id": "85f3ccdd-2ebd-430e-ad42-d51d4ccca682",
+      "name": "Send a text message58",
+      "webhookId": "e2b25fb4-3e1b-4601-b419-20a208b6776c",
+      "credentials": {
+        "telegramApi": {
+          "id": "YMdv2aeMU5U6FQ85",
+          "name": "Agenda bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": 2,
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.first_name }}",
+            "pantalla_actual": "MENU",
+            "paso_actual": "={{ $json.Vacio }}",
+            "datos_parciales_1": "={{ $json.Vacio }}",
+            "datos_parciales_2": "={{ $json.Vacio }}",
+            "datos_parciales_3": "={{ $json.Vacio }}",
+            "datos_parciales_4": "={{ $json.Vacio }}",
+            "datos_parciales_5": "={{ $json.Vacio }}",
+            "datos_parciales_6": "={{ $json.Vacio }}",
+            "timestamp_ultima_interaccion": "={{ $json.Vacio }}"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_1",
+              "displayName": "datos_parciales_1",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_2",
+              "displayName": "datos_parciales_2",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_3",
+              "displayName": "datos_parciales_3",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_4",
+              "displayName": "datos_parciales_4",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_5",
+              "displayName": "datos_parciales_5",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_6",
+              "displayName": "datos_parciales_6",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "timestamp_ultima_interaccion",
+              "displayName": "timestamp_ultima_interaccion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        8016,
+        4192
+      ],
+      "id": "d81b6fa3-fab9-40d3-bc29-21fe78ba9374",
+      "name": "Update row in sheet53",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d96b111a-3d75-4653-acf6-0ac987841386",
+              "name": "Vacio",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        7824,
+        4192
+      ],
+      "id": "ceafbf64-2632-48a9-a729-38a306548ec8",
+      "name": "Edit Fields12"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI",
+          "mode": "list",
+          "cachedResultName": "AgendaBot Services",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920024994,
+          "mode": "list",
+          "cachedResultName": "SESSIONS",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fr0SIHz1fqAEYHHRrOVIQoVQisSI1TMWBi5-NYTETkI/edit#gid=1920024994"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": 2,
+            "telegram_user": "={{ $('Telegram Trigger').item.json.message.chat.first_name }}",
+            "pantalla_actual": "MENU",
+            "paso_actual": "={{ $json.Vacio }}",
+            "datos_parciales_1": "={{ $json.Vacio }}",
+            "datos_parciales_2": "={{ $json.Vacio }}",
+            "datos_parciales_3": "={{ $json.Vacio }}",
+            "datos_parciales_4": "={{ $json.Vacio }}",
+            "datos_parciales_5": "={{ $json.Vacio }}",
+            "datos_parciales_6": "={{ $json.Vacio }}",
+            "timestamp_ultima_interaccion": "={{ $json.Vacio }}"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "telegram_user",
+              "displayName": "telegram_user",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pantalla_actual",
+              "displayName": "pantalla_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "paso_actual",
+              "displayName": "paso_actual",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_1",
+              "displayName": "datos_parciales_1",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_2",
+              "displayName": "datos_parciales_2",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_3",
+              "displayName": "datos_parciales_3",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_4",
+              "displayName": "datos_parciales_4",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_5",
+              "displayName": "datos_parciales_5",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "datos_parciales_6",
+              "displayName": "datos_parciales_6",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "timestamp_ultima_interaccion",
+              "displayName": "timestamp_ultima_interaccion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        7584,
+        4464
+      ],
+      "id": "671b59fe-2c79-4889-bfb1-1e7dfd38a57b",
+      "name": "Update row in sheet54",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "hG2KjqFn0nRxAqmP",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d96b111a-3d75-4653-acf6-0ac987841386",
+              "name": "Vacio",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        7376,
+        4464
+      ],
+      "id": "9692f621-2d54-4a9d-be89-e3790cda06ec",
+      "name": "Edit Fields13"
+    },
+    {
+      "parameters": {
+        "jsCode": "const idIngresado = $node[\"Telegram Trigger\"].json.message.text.trim().toUpperCase();\nconst tareas = items.map(i => i.json);\n\nconst tarea = tareas.find(c => c.id_tarea === idIngresado);\n\nif (!tarea) {\n  return [{\n    json: {\n      error: 'No se encontró una tarea con ese ID. Inténtalo nuevamente.'\n    }\n  }];\n}\n\nif (tarea.estado !== 'Pendiente') {\n  return [{\n    json: {\n      error: 'Solo se pueden editar tareas en estado Pendiente.'\n    }\n  }];\n}\n\nreturn [{\n  json: {\n    id_tarea: tarea.id_tarea,\n    rowNumber: tarea.rowNumber,\n    estado_actual: tarea.estado\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        6976,
+        3616
+      ],
+      "id": "29fba3b0-2cbe-4c1d-a680-a50b9c994bad",
+      "name": "Code in JavaScript11"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "f176d09d-3f91-48cd-b6cd-4224a025f519",
+              "leftValue": "={{ $json.error }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        7184,
+        3616
+      ],
+      "id": "e100285d-25c2-423c-a88e-0c37a55a973e",
+      "name": "If16"
+    },
+    {
+      "parameters": {
+        "content": "TAREAS",
+        "height": 112,
+        "width": 208
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        6160,
+        2032
+      ],
+      "typeVersion": 1,
+      "id": "a1f712a0-d644-4ae7-8285-55b2b8045480",
+      "name": "Sticky Note6"
     }
   ],
   "pinData": {},
@@ -12091,6 +15104,20 @@
         [
           {
             "node": "If8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If11",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If14",
             "type": "main",
             "index": 0
           }
@@ -12268,7 +15295,7 @@
       "main": [
         [
           {
-            "node": "Update row in sheet5",
+            "node": "Code in JavaScript9",
             "type": "main",
             "index": 0
           }
@@ -12627,11 +15654,6 @@
       "main": [
         [
           {
-            "node": "Edit Fields1",
-            "type": "main",
-            "index": 0
-          },
-          {
             "node": "Get row(s) in sheet8",
             "type": "main",
             "index": 0
@@ -12688,22 +15710,6 @@
         [
           {
             "node": "Update row in sheet13",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Edit Fields1": {
-      "main": [
-        [
-          {
-            "node": "Send a text message11",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Send a text message22",
             "type": "main",
             "index": 0
           }
@@ -13450,6 +16456,35 @@
         ]
       ]
     },
+    "If10": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet5",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send a text message19",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript9": {
+      "main": [
+        [
+          {
+            "node": "If10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "If1": {
       "main": [
         [
@@ -13491,7 +16526,13 @@
             "index": 0
           }
         ],
-        [],
+        [
+          {
+            "node": "Send a text message59",
+            "type": "main",
+            "index": 0
+          }
+        ],
         [],
         [
           {
@@ -13518,6 +16559,61 @@
         [
           {
             "node": "Send a text message17",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript6": {
+      "main": [
+        [
+          {
+            "node": "Send a text message46",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet26": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a text message46": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet17",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a text message47": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet46",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a text message59": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet56",
             "type": "main",
             "index": 0
           }
@@ -13763,17 +16859,6 @@
         ]
       ]
     },
-    "Code in JavaScript6": {
-      "main": [
-        [
-          {
-            "node": "Send a text message46",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Get row(s) in sheet24": {
       "main": [
         [
@@ -13851,22 +16936,419 @@
         ]
       ]
     },
-    "Get row(s) in sheet26": {
+    "Get row(s) in sheet27": {
       "main": [
         [
           {
-            "node": "Code in JavaScript6",
+            "node": "Code in JavaScript10",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Send a text message46": {
+    "Update row in sheet47": {
       "main": [
         [
           {
-            "node": "Update row in sheet17",
+            "node": "Send a text message49",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If11": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet27",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If12",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch12": {
+      "main": [
+        [
+          {
+            "node": "Send a text message50",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send a text message52",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If12": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet28",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Validar formato YYYY-MM-DD3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validar formato YYYY-MM-DD3": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet48",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Telegram Error5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Telegram OK14": {
+      "main": [
+        [
+          {
+            "node": "Send a text message53",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update row in sheet48": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet30",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a text message50": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet49",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet28": {
+      "main": [
+        [
+          {
+            "node": "Switch12",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a text message52": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields10": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet51",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update row in sheet52": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields11": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet55",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update row in sheet55": {
+      "main": [
+        [
+          {
+            "node": "Telegram OK14",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet30": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet52",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript10": {
+      "main": [
+        [
+          {
+            "node": "If13",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If13": {
+      "main": [
+        [
+          {
+            "node": "Send a text message48",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Update row in sheet47",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet29": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update row in sheet50": {
+      "main": [
+        [
+          {
+            "node": "Send a text message54",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If14": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet29",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If15",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete rows or columns from sheet1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields12",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If15": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet32",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send a text message57",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet31": {
+      "main": [
+        [
+          {
+            "node": "Delete rows or columns from sheet1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet32": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet31",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a text message55": {
+      "main": [
+        [
+          {
+            "node": "Send a text message56",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a text message57": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields13",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update row in sheet53": {
+      "main": [
+        [
+          {
+            "node": "Send a text message55",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields12": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet53",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update row in sheet54": {
+      "main": [
+        [
+          {
+            "node": "Send a text message58",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields13": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet54",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript11": {
+      "main": [
+        [
+          {
+            "node": "If16",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If16": {
+      "main": [
+        [
+          {
+            "node": "Send a text message51",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Update row in sheet50",
             "type": "main",
             "index": 0
           }
@@ -13879,7 +17361,7 @@
     "executionOrder": "v1",
     "availableInMCP": false
   },
-  "versionId": "706efb1c-8443-4ec3-9032-8c04229edeab",
+  "versionId": "15570174-db61-4ca4-ab97-5b6f482ae46f",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "2461c286aed77d4c7fbe9ed395a19fb04c04889a0855697eb6af572c2383f548"
